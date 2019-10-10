@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 14px;
+    color: #6f6f6f;
+}
+
+h1.h1 {
+    background-color: #efefef;
+    margin-top: 17px;
+    line-height: 0.5;
+    padding-left: 20px;
+}
+
+h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    margin-top: 50px;
+    box-sizing: border-box;
+    background-color: #f3f3f3;
+    padding: 30px 30px 14px;
+    border: 1px solid #ececec;
+    border-radius: 10px;
+    background-image: linear-gradient(to right bottom, #f3f3f3, #f2f2f2, #f0f1f0, #efefef, #eeeeee);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+.headBook {
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.cellHead {
+    width: 33.33%;
+    background-color: white;
+    margin: 1px;
+    padding: 4px;
+    border: 1px solid #ececec;
+}
+
+.mainBook {
+    width: 100%;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 5px;
+    border-radius: 4px;
+    background-color: #ececec;
+}
+
+.cellPerson {
+    display: flex;
+    position: relative;
+}
+
+.cellPerson:hover .cell {
+    background-color: #3F51B5;
+    color: #fff;
+    border: 1px solid #3F51B5;
+}
+.cellPerson:hover {
+    background-color: #3F51B5;
+}
+
+
+.cell {
+    width: 33.33%;
+    background-color: white;
+    margin: 1px;
+    padding: 4px;
+    border: 1px solid #ececec;
+    box-sizing: border-box;
+}
+
+.btnBlock {
+    position: absolute;
+    right: 0;
+    display: none;
+    padding: 4px;
+}
+
+.cellPerson:hover .btnBlock {
+    display: flex;
+}
+
+.viewBtn {
+    border-radius: 4px;
+    padding: 2px 6px;
+    background-color: #8BC34A;
+    color: #fff;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.viewBtn:hover {
+    border-radius: 4px;
+    padding: 2px 6px;
+    background-color: #4CAF50;;
+    color: #fff;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.editBtn {
+    border-radius: 4px;
+    padding: 2px 6px;
+    background-color: #03A9F4;
+    color: #fff;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+.delBtn {
+    border-radius: 4px;
+    padding: 2px 6px;
+    background-color: #F44336;
+    color: #fff;
+    margin-right: 4px;
+    cursor: pointer;
+}
+
+
+.parent-modal {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    overflow: auto;
+    background-color: #ffffffb0;
+}
+
+.modal {
+    border: 1px solid #ccc;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    border-radius: 4px;
+    padding: 40px;
+    background-color: #f3f3f3;
+    font-size: 16px;
+    text-align: center;
+}
+
+div#btnModal {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 35px;
+}
+
+div#yes {
+    padding: 4px;
+    width: 130px;
+    background-color: #8bc34a;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+div#no {
+    padding: 4px;
+    width: 130px;
+    background-color: #03a9f4;
+    border-radius: 4px;
+    color: #fff;
+    cursor: pointer;
+}
+
+form {
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #e0dfdf;
+    border: 1px solid #dad8d8;
+    border-radius: 5px;
+}
+
+input#username {
+    width: 33%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+input#email {
+    width: 33%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+input#telNumber {
+    width: 33%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+input#age {
+    width: 33%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+input#cardNumber {
+    width: 33%;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    padding: 2px;
+}
+
+input#saveUser {
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 4px 13px;
+    background-color: #8BC34A;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+}
+
+input#saveUser:hover {
+    background-color: #03A9F4;
+}
+
+#message {
+    color: #f44336;
+    display: block;
+    margin-top: 14px;
+}
+
+p.input-p {
+    line-height: 1.8;
+}
+
+.innerDetailedBlock {
+    margin-top: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+    background-color: #ffffff;
+    border: 1px solid #dad8d8;
+    border-radius: 5px;
+    color: #607D8B;
+}
+
+.infoByPerson {
+    margin-bottom: 10px;
+}
+
+.closeBtn {
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 4px 13px;
+    background-color: #ffffff;
+    color: #607D8B;
+    cursor: pointer;
+    border: 1px solid #607D8B;
+    display: inline-block;
+}
+
+.closeBtn:hover {
+    background-color: #607D8B;
+    color: #ffffff;
+}
+
+input#saveEditUser {
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 4px 13px;
+    background-color: #8BC34A;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+}
+
+div#message2 {
+    margin-top: 10px;
+    color: #f44336;
+}
+
+span.inputText {
+    width: 140px;
+    display: inline-block;
+}
+
+.copyright {
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 16px;
+    font-size: 12px;
+    background-color: #6f6f6f;
+    font-family: monospace;
+    border-radius: 4px;
+}
+
+span.wrong {
+    color: #F44336;
+}
+
+#addUser {
+    margin: 0 auto;
+    display: block;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 4px 13px;
+    background-color: #8BC34A;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+}
+
+#addUser:hover {
+    background-color: #2196F3;
+}
+
+.hideForm {
+    display: none;
+}
+
+.baseSave {
+    margin: 0 auto;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 4px;
+    padding: 4px 13px;
+    background-color: #8BC34A;
+    color: #fff;
+    cursor: pointer;
+    border: 0;
+}
+
+.baseSave:hover {
+    background-color: #4CAF50;
+}

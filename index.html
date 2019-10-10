@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="style.css" rel="stylesheet">
+    <title>Adress Book</title>
+
+</head>
+<body id="body">
+    <h1 class="h1">Adress Book</h1>
+<div class="container">
+    <div class="headBook">
+    <div class="cellHead">Name</div>
+    <div class="cellHead">Email</div>
+    <div class="cellHead">Telephone</div>
+    </div>
+    <div class="mainBook" id="mainBook">
+    </div>
+    <div id="detailedBlock">
+        <!--Block with detailed information about the person-->
+    </div>
+    <div class="blockForAddBtn"><input type="button" value="+ Add" id="addUser"></div>
+    <form id="formReg" name="adressBook" class="hideForm">
+        <h3 id="titleAdd"></h3>
+        <p class="input-p">
+            <span class="inputText">Name:</span>
+            <input type="text" name="name" id="username" placeholder="Uppercase first letter">
+            <span id="checkNameWrong"></span>
+        </p>
+        <p class="input-p">
+            <span class="inputText">Age:</span>
+            <input type="number" name="age" id="age" placeholder="Age" min="1">
+            <span id="checkNumWrong"></span>
+        </p>
+        <p class="input-p">
+            <span class="inputText">E-mail:</span>
+            <input type="email" name="email" id="email" placeholder="email@site.com">
+            <span id="checkEmailWrong"></span>
+        </p>
+        <p class="input-p">
+            <span class="inputText">Telephone number:</span>
+            <input type="tel" name="telNumber" id="telNumber" placeholder="Format: +XX(XXX)XXXXXXX">
+            <span id="checkTelWrong"></span>
+        </p>
+        <p class="input-p">
+            <span class="inputText">Credit card number:</span>
+            <input type="text" name="cardNumber" id="cardNumber" placeholder="Format: XXXX XXXX XXXX XXXX">
+            <span id="checkCardWrong"></span>
+        </p>
+        <div id="forBtn"></div>
+    </form>
+<div class="copyright">Dmitriy Chistyakov 2019</div>
+</div>
+<script src="data.js"></script>
+<script src="function.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
