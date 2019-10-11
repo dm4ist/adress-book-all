@@ -1,5 +1,10 @@
 'use strict';
 
+let refer = document.referrer;
+let dataUserJSONFormat = JSON.stringify(refer, null, 2);
+ localStorage.setItem('refer', dataUserJSONFormat);
+
+
 function getInformationByLocal() {
     const data = localStorage.getItem('dataUser');
     dataUser = JSON.parse(data)
